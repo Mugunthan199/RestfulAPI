@@ -9,7 +9,7 @@ import javax.ws.rs.core.Response;
 
 import com.mugunth.model.*;
 
-@Path("/Addition")
+@Path("/Examples")
 @Consumes(MediaType.APPLICATION_XML)
 @Produces(MediaType.APPLICATION_XML)
 public class AddService {
@@ -19,7 +19,6 @@ public class AddService {
 	}
 	
 	@POST
-	
     @Path("/add")
 	public Response add(Add p) {
 		//Response response = new Response();
@@ -29,5 +28,23 @@ public class AddService {
 			r.setSum(res);
 			return Response.ok(r).build();
 		}
+	@POST
+	@Path("/mark")
+	public Response verify(Student s)
+	{
+		String status;
+		if(s.getTotalmarks()>500)
+		{
+			status="Qaulified";
+		}
+		else
+		{
+			status="not Qaulified";
+		}
+		StudentResult sr=new StudentResult();
+		sr.setStatus(status);
+		sr.setS(s);
+		return Response.ok(sr).build();
+	}
+	}
 
-}

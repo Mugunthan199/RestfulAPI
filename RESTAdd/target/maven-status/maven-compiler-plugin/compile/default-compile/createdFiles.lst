@@ -1,3 +1,5 @@
 com\mugunth\model\Result.class
 com\mugunth\model\Add.class
+com\mugunth\model\Student.class
+com\mugunth\model\StudentResult.class
 com\mugunth\service\AddService.class
