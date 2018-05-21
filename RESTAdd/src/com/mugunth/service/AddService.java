@@ -30,10 +30,10 @@ public class AddService {
 		}
 	@POST
 	@Path("/mark")
-	public Response verify(Student s)
+	public Response verify(Student studentdetails)
 	{
 		String status;
-		if(s.getTotalmarks()>500)
+		if(studentdetails.getTotalmarks()>500)
 		{
 			status="Qaulified";
 		}
@@ -43,7 +43,7 @@ public class AddService {
 		}
 		StudentResult sr=new StudentResult();
 		sr.setStatus(status);
-		sr.setS(s);
+		sr.setS(studentdetails);
 		return Response.ok(sr).build();
 	}
 	}

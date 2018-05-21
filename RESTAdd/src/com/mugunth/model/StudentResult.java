@@ -8,13 +8,13 @@ public class StudentResult {
 	public StudentResult() {
 		// TODO Auto-generated constructor stub
 	}
-	Student s;
+	Student studentdetails;
 	private String status;
-	public Student getS() {
-		return s;
+	public Student getStudentdetails() {
+		return studentdetails;
 	}
-	public void setS(Student s) {
-		this.s = s;
+	public void setS(Student studentdetails) {
+		this.studentdetails = studentdetails;
 	}
 	public String getStatus() {
 		return status;
