@@ -13,7 +13,7 @@ public class StudentResult {
 	public Student getStudentdetails() {
 		return studentdetails;
 	}
-	public void setS(Student studentdetails) {
+	public void setStudentdetails(Student studentdetails) {
 		this.studentdetails = studentdetails;
 	}
 	public String getStatus() {
@@ -22,5 +22,6 @@ public class StudentResult {
 	public void setStatus(String status) {
 		this.status = status;
 	}
+	
 	
 }

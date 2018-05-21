@@ -43,7 +43,7 @@ public class AddService {
 		}
 		StudentResult sr=new StudentResult();
 		sr.setStatus(status);
-		sr.setS(studentdetails);
+		sr.setStudentdetails(studentdetails);
 		return Response.ok(sr).build();
 	}
 	}
